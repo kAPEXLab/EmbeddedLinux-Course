@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Embedded Linux Course</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    #content {
+      flex: 1;
+      border-right: 1px solid #ccc;
+    }
+    #sidebar {
+      width: 300px;
+      overflow-y: auto;
+      background: #f9f9f9;
+      padding: 10px;
+    }
+    #sidebar h2 {
+      margin-top: 0;
+    }
+    #sidebar a {
+      display: block;
+      padding: 6px;
+      text-decoration: none;
+      color: #333;
+    }
+    #sidebar a:hover {
+      background: #ddd;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <iframe id="viewer" src="Presentations/L01_01_Breaking Bare‑Metal Thinking.html"></iframe>
+  </div>
+  <div id="sidebar">
+    <h2>Course Index</h2>
+    <a href="#" onclick="load('Presentations/L01_01_Breaking Bare‑Metal Thinking.html')">L01_01 Breaking Bare‑Metal Thinking</a>
+    <a href="#" onclick="load('Presentations/L01_02_Operating System in Embedded Systems.html')">L01_02 Operating System in Embedded Systems</a>
+    <a href="#" onclick="load('Presentations/L01_03_Linux.html')">L01_03 Linux</a>
+    <a href="#" onclick="load('Presentations/L01_04_Kernel Subsystems.html')">L01_04 Kernel Subsystems</a>
+    <a href="#" onclick="load('Presentations/L01_05_Understanding Demo.html')">L01_05 Understanding Demo</a>
+    <a href="#" onclick="load('Presentations/L01_06_Linux Commands.html')">L01_06 Linux Commands</a>
+    <a href="#" onclick="load('Presentations/L02_01_Introduction to System Programming.html')">L02_01 Introduction to System Programming</a>
+    <a href="#" onclick="load('Presentations/L02_02_File Operations.html')">L02_02 File Operations</a>
+    <a href="#" onclick="load('Presentations/L03_01_Process Management.html')">L03_01 Process Management</a>
+    <a href="#" onclick="load('Presentations/L03_02_Signals.html')">L03_02 Signals</a>
+    <a href="#" onclick="load('Presentations/L03_03_Threads.html')">L03_03 Threads</a>
+    <a href="#" onclick="load('Presentations/L03_04_Mutex.html')">L03_04 Mutex</a>
+    <a href="#" onclick="load('Presentations/L03_05_Semaphore.html')">L03_05 Semaphore</a>
+    <a href="#" onclick="load('Presentations/L04_01_Pipe.html')">L04_01 Pipe</a>
+    <a href="#" onclick="load('Presentations/L04_02_FIFO.html')">L04_02 FIFO</a>
+    <a href="#" onclick="load('Presentations/L04_03_Message Queue.html')">L04_03 Message Queue</a>
+    <a href="#" onclick="load('Presentations/L04_04_Shared Memory.html')">L04_04 Shared Memory</a>
+  </div>
+
+  <script>
+    function load(file) {
+      document.getElementById('viewer').src = file;
+    }
+  </script>
+</body>
+</html>
